@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>duk@website > echo "hello"</title>
+
+  <style>
+    html {
+      align-items: center;
+      background-color: #3b4252;
+      color: #3b4252;
+      display: flex;
+      font: 22px/1 "Inconsolata", monospace;
+      height: 100%;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #2e3440;
+      border-radius: 2px;
+      box-shadow: 1px 1px 6px #1d1f2187;
+      color: #c5c8c6;
+      display: flex;
+      flex-direction: column;
+      min-height: 30ch;
+      min-width: 50vw;
+      padding: 2em;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p span {
+      color: #d8dee9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      column-gap: 2em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 1em 0;
+    }
+
+    ul:nth-child(1n) li:first-child {
+      color: #a54242;
+    }
+
+    ul:nth-child(2n) li:first-child {
+      color: #de935f;
+    }
+    
+    ul:nth-child(3n) li:first-child {
+      color: #f0c674;
+    }
+    
+    ul:nth-child(4n) li:first-child {
+      color: #4c566a;
+    }
+
+    ul:nth-child(5n) li:first-child {
+      color: #85678f;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      margin: 0 0 1em;
+    }
+
+    p #cursor {
+      background-color: #ffff;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <p><span>duk@website > </span>echo "welcome"</p>
+
+  <nav>
+    <ul>
+      <li>link page</li>
+      <li><a href="https://solo.to/dukeatron">bio_page</a></li>
+      <li><a href="https://discord.com/api/oauth2/authorize?client_id=936567899282362419&permissions=8&scope=applications.commands%20bot">discord_bot</a></li>
+    </ul>
+
+    <ul>
+      <li>home</li>
+      <li><a href="https://twitter.com/dukeatron200">twatter</a></li>
+      <li><a href="https://127.0.0.1">latest_blog</a></li>
+    </ul>
+  </nav>
+
+  <p><span>duk@website > </span> <span id="cursor">.</span></p>
+</body>
+</html>
